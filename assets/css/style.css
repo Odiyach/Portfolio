@@ -1554,11 +1554,9 @@ blockquote {
     margin-top: 10px; /* Espacement entre l'image et la barre de progression */
   }
 
-  .progress-bar {
-    width: 0; /* La largeur sera ajustée dynamiquement en pourcentage */
-    height: 100%;
-    background-color: #4CAF50; /* Couleur de la barre de progression */
-  }
+
+
+
 
 
 
