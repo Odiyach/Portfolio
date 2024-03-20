@@ -3,50 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TP Cabinet Medical</title>
+    <title>Projet HelpOrt</title>
     <style>
         body {
-            margin: 0; /* Supprime les marges par défaut du corps du document */
-            padding: 0; /* Supprime les rembourrages par défaut du corps du document */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Utilisation de min-height pour s'assurer que le contenu s'affiche correctement */
+            flex-direction: column;
         }
 
         header {
-            text-align: center; /* Centre le texte dans le header */
-            padding: 20px; /* Ajoute un espace autour du titre pour le rendre plus visible */
-            background-color: #f0f0f0; /* Ajoute une couleur de fond au header pour le mettre en évidence */
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-bottom: 2px solid #ccc;
+            width: 100%;
+        }
+
+        h1 {
+            margin: 0; /* Supprime la marge par défaut */
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .photos-container {
-            display: flex; /* Utilise un conteneur flexible pour aligner les photos horizontalement */
-            flex-wrap: wrap; /* Permet aux photos de passer à la ligne lorsque la largeur de l'écran est réduite */
-            justify-content: center; /* Centre les photos horizontalement dans le conteneur */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
         }
 
         .photo {
-            margin: 10px; /* Ajoute une marge autour de chaque photo pour les séparer légèrement */
+            margin: 10px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>TP Cabinet Medical</h1>
+    <h1>TP Graphique</h1>
 </header>
 
 <main>
     <section>
 
-        <div class="photos-container" style="text-align: center">
-            <h2>Gestion d'un cabinet médical pour prendre ses rendez-vous</h2>
-            <a href="https://github.com/Odiyach/tpCabinet_medical.git" target="_blank">Lien GitHub</a>
-            <div class="photo">
-                <img src="assets/img/Cab/RunTPMedical.png" alt="Photo 1" width="80%">
-            </div>
-
-
-
-
+        <h2>Gestion d'un cabinet médical pour prendre ses rendez-vous</h2>
+        <p></p>
+        <br>
+        <br>
+        <a href="https://github.com/Odiyach/tpCabinet_medical.git" target="_blank">Lien GitHub</a>
+        <div class="photo">
+            <img src="assets/img/Cab/Capture%20d’écran%202024-03-20%20à%2010.54.14.png" alt="Photo 1" width="80%">
         </div>
+        <div class="photo">
+            <img src="assets/img/Cab/Capture%20d’écran%202024-03-20%20à%2010.53.29.png" alt="Photo 1" width="80%">
+        </div>
+
     </section>
 </main>
 

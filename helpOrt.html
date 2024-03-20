@@ -6,24 +6,43 @@
     <title>Projet HelpOrt</title>
     <style>
         body {
-            margin: 0; /* Supprime les marges par défaut du corps du document */
-            padding: 0; /* Supprime les rembourrages par défaut du corps du document */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Utilisation de min-height pour s'assurer que le contenu s'affiche correctement */
+            flex-direction: column;
         }
 
         header {
-            text-align: center; /* Centre le texte dans le header */
-            padding: 20px; /* Ajoute un espace autour du titre pour le rendre plus visible */
-            background-color: #f0f0f0; /* Ajoute une couleur de fond au header pour le mettre en évidence */
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-bottom: 2px solid #ccc;
+            width: 100%;
+        }
+
+        h1 {
+            margin: 0; /* Supprime la marge par défaut */
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .photos-container {
-            display: flex; /* Utilise un conteneur flexible pour aligner les photos horizontalement */
-            flex-wrap: wrap; /* Permet aux photos de passer à la ligne lorsque la largeur de l'écran est réduite */
-            justify-content: center; /* Centre les photos horizontalement dans le conteneur */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
         }
 
         .photo {
-            margin: 10px; /* Ajoute une marge autour de chaque photo pour les séparer légèrement */
+            margin: 10px;
+            text-align: center;
         }
     </style>
 </head>
@@ -35,7 +54,6 @@
 
 <main>
     <section>
-
         <div class="photos-container">
             <h2>Système d'entraide entre élèves de l'Ort</h2>
             <a href="https://github.com/ort-montreuil/BTS-SIO-G14-2024-HELPORT-Java.git" target="_blank">Lien GitHub</a>
@@ -44,11 +62,8 @@
                 <img src="assets/img/helpOrt/ihmHelpOrt.png" alt="Photo 1">
             </div>
             <div class="photo">
-                <img src="assets/img/helpOrt/CreerDemande.png" alt="Photo 1">
+                <img src="assets/img/helpOrt/CreerDemande.png" alt="Photo 2">
             </div>
-
-
-
         </div>
     </section>
 </main>
