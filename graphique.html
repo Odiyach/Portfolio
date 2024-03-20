@@ -4,50 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TP Graphique</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body {
-            margin: 0; /* Supprime les marges par défaut du corps du document */
-            padding: 0; /* Supprime les rembourrages par défaut du corps du document */
+        header {
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-bottom: 2px solid #ccc;
         }
 
-        header {
-            text-align: center; /* Centre le texte dans le header */
-            padding: 20px; /* Ajoute un espace autour du titre pour le rendre plus visible */
-            background-color: #f0f0f0; /* Ajoute une couleur de fond au header pour le mettre en évidence */
+        h1 {
+            margin: 0;
         }
 
         .photos-container {
-            display: flex; /* Utilise un conteneur flexible pour aligner les photos horizontalement */
-            flex-wrap: wrap; /* Permet aux photos de passer à la ligne lorsque la largeur de l'écran est réduite */
-            justify-content: center; /* Centre les photos horizontalement dans le conteneur */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
         }
 
         .photo {
-            margin: 10px; /* Ajoute une marge autour de chaque photo pour les séparer légèrement */
+            margin: 10px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
 
-<header>
+<header class="text-center">
     <h1>TP Graphique</h1>
 </header>
 
 <main>
     <section>
-
-        <div class="photos-container">
+        <div class="container text-center">
             <h2>Gestion de différents graphiques</h2>
-            <a href="https://github.com/Odiyach/TP_Graphique.git" target="_blank">Lien GitHub</a>
-            <div class="photo">
-                <img src="assets/img/portfolio/graph1.png" alt="Photo 1">
+            <a href="https://github.com/Odiyach/TP_Graphique.git" target="_blank" class="d-block mb-4">Lien GitHub</a>
+
+            <div class="photos-container">
+                <div class="photo">
+                    <img src="assets/img/portfolio/graph1.png" alt="Photo 1" class="img-fluid">
+                </div>
+                <div class="photo">
+                    <img src="assets/img/portfolio/graph2.png" alt="Photo 2" class="img-fluid">
+                </div>
             </div>
-            <div class="photo">
-                <img src="assets/img/portfolio/graph2.png" alt="Photo 2">
-            </div>
-
-
-
         </div>
     </section>
 </main>
